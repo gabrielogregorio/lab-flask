@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+	<meta charset="utf-8">
+	<title>REST API COM FLASK</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <style type="text/css">
+		html, body {
+		    height: 100% !important;
+		}
+
+		.footer{
+			position: relative;
+			width: 100%;
+      padding: 20px;
+
+			bottom: 80px;
+      height: 80px;
+
+		}
+
+		.esticar{
+			height: 100%;
+		}
+
+    </style>
+            
+</head>
+<body>
+
+
+    <!-- Page Layout here -->
+    <div class="row esticar">
+
+      <div class="col s12 red white-text center">
+      	<h2>REST API COM FLASK</h2>
+      </div>
+
+      <div class="col s12 m1 l2 indigo lighten-5 "> <!-- Note that "m8 l9" was added -->
+      	<p>CRUD API FLASK - Gerenciador de tarefas</p>
+      	<p>Está é uma versão de estudos com REST API para um gerenciador de tarefas.</p>
+      	<p>Para usa-lo é necessário seguia a tabela de referências ao lado. </p>
+      </div>
+
+      <div class="col s12 m5 l10 gray"> <!-- Note that "m8 l9" was added -->
+        <table class="responsive-table striped">
+        <thead>
+          <tr>
+              <th>Função</th>
+              <th>TIPO</th>
+              <th>URL</th>
+              <th>CORPO</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>Adicionar tarefas</td>
+            <td><span class=" badge orange black-text">POST</span></td>
+            <td><a href="http://127.0.0.1:5000/add">http://127.0.0.1:5000/add</a></td>
+            <td>{ "responsável": "", "status": "","tarefa": "" }</td>
+          </tr>
+
+          <tr>
+            <td>Listar todas as tarefas</td>
+            <td><span class=" badge green white-text">GET</span></td>
+            <td><a href="http://127.0.0.1:5000/task">http://127.0.0.1:5000/task</a></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>Verificar tarefa</td>
+            <td><span class=" badge green white-text">GET</span></td>
+            <td><a href="http://127.0.0.1:5000/task/1">http://127.0.0.1:5000/task/1</a></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>Editar tarefas</td>
+            <td><span class=" badge blue white-text">PUT</span></td>
+            <td><a href="http://127.0.0.1:5000/task/1">http://127.0.0.1:5000/task/1</a></td>
+            <td>{"responsável": "", "status":"", "tarefa": "" }</td>
+          </tr>
+
+          <tr>
+            <td>Deletar tarefas</td>
+            <td><span class=" badge red white-text">DELETE</span></td>
+            <td><a href="http://127.0.0.1:5000/task/4">http://127.0.0.1:5000/task/1</a></td>
+            <td><pre></pre></td>
+          </tr>
+        </tbody>
+      </table>
+
+      </div>
+    </div>
+
+   <div class="footer center indigo lighten-5">
+      <p>Copyright(c) 2020</p>
+    </div>
+
+</body>
+</html>
